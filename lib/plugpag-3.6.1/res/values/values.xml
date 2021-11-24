@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <bool name="keyboard_random">false</bool>
+    <color name="alto">#FFD4D4D4</color>
+    <color name="black_38">#26000000</color>
+    <color name="blue">#24A5D3</color>
+    <color name="boulder">#777777</color>
+    <color name="darkGray">#424752</color>
+    <color name="gray">#8E8E93</color>
+    <color name="gray_12">#0C333333</color>
+    <color name="green">#8DDCCD</color>
+    <color name="lightBlue">#92D2E9</color>
+    <color name="lightGray">#FFD4D4D4</color>
+    <color name="lightGreen">#1BB99A</color>
+    <color name="lightYellow">#DCE35F</color>
+    <color name="mobile_colorAccent">#8E8E93</color>
+    <color name="mobile_colorPrimary">#FAFAFA</color>
+    <color name="mobile_colorPrimaryDark">#F0F0F0</color>
+    <color name="pag_green">#1BB99A</color>
+    <color name="pag_primary_dark_green">#149C81</color>
+    <color name="pag_second_dark_green">#0E725E</color>
+    <color name="plugpag_black">#000000</color>
+    <color name="plugpag_button">#1EC390</color>
+    <color name="plugpag_button_disable_text">#727272</color>
+    <color name="plugpag_button_disabled">#f2f2f2</color>
+    <color name="plugpag_button_text">#FFFFFF</color>
+    <color name="plugpag_colorAccent">#1EC390</color>
+    <color name="plugpag_colorPrimary">#1EC390</color>
+    <color name="plugpag_colorPrimaryDark">#1EC390</color>
+    <color name="plugpag_data_input_data">#00ba9b</color>
+    <color name="plugpag_data_input_title">#4c4c4c</color>
+    <color name="plugpag_error">#DA3928</color>
+    <color name="plugpag_forgot_password">#666666</color>
+    <color name="plugpag_snackbar_text">#FFFFFF</color>
+    <color name="plugpag_toggle_password">#666666</color>
+    <color name="plugpag_translucent_activity_color">#88000000</color>
+    <color name="plugpag_translucent_fragment_background">#FFFFFF</color>
+    <color name="plugpag_white">#FFFFFF</color>
+    <color name="red">#DA3928</color>
+    <color name="whiteSmoke">#F2F2F2</color>
+    <color name="wildSand">#FFF6F6F6</color>
+    <dimen name="circular_custom_max_size">280dp</dimen>
+    <dimen name="circular_custom_min_size">236dp</dimen>
+    <dimen name="container_custom_progress">250dp</dimen>
+    <dimen name="container_custom_snackbar_size">345dp</dimen>
+    <dimen name="ic_progress_size">48dp</dimen>
+    <dimen name="margin_min_custom_progress">8dp</dimen>
+    <dimen name="plugpag_auth_button_toggle_password_font_size">12sp</dimen>
+    <dimen name="plugpag_auth_button_toggle_password_margin_right">4dp</dimen>
+    <dimen name="plugpag_auth_button_toggle_password_margin_top">24dp</dimen>
+    <dimen name="plugpag_auth_edittext_big_text_size">20sp</dimen>
+    <dimen name="plugpag_auth_edittext_margin_bottom">40dp</dimen>
+    <dimen name="plugpag_auth_edittext_padding_left">0dp</dimen>
+    <dimen name="plugpag_auth_edittext_padding_right">0dp</dimen>
+    <dimen name="plugpag_auth_edittext_text_size">16sp</dimen>
+    <dimen name="plugpag_auth_edtitext_height">40dp</dimen>
+    <dimen name="plugpag_auth_error_text_size">12sp</dimen>
+    <dimen name="plugpag_auth_forgot_password_padding_bottom">8dp</dimen>
+    <dimen name="plugpag_auth_forgot_password_padding_top">8dp</dimen>
+    <dimen name="plugpag_auth_forgot_password_text_size">14sp</dimen>
+    <dimen name="plugpag_auth_textinputlayout_margin_bottom">24dp</dimen>
+    <dimen name="plugpag_auth_textinputlayout_margin_top">0dp</dimen>
+    <dimen name="plugpag_auth_textinputlayout_max_height">80dp</dimen>
+    <dimen name="plugpag_button_height">48dp</dimen>
+    <dimen name="plugpag_button_margin_bottom">24dp</dimen>
+    <dimen name="plugpag_button_margin_left">24dp</dimen>
+    <dimen name="plugpag_button_margin_right">24dp</dimen>
+    <dimen name="plugpag_button_margin_top">16dp</dimen>
+    <dimen name="plugpag_button_padding_bottom">16dp</dimen>
+    <dimen name="plugpag_button_padding_left">32dp</dimen>
+    <dimen name="plugpag_button_padding_right">32dp</dimen>
+    <dimen name="plugpag_button_padding_top">16dp</dimen>
+    <dimen name="plugpag_button_text_size">14sp</dimen>
+    <dimen name="plugpag_data_input_button_margin_bottom">16dp</dimen>
+    <dimen name="plugpag_data_input_clear_button_height">18dp</dimen>
+    <dimen name="plugpag_data_input_clear_button_margin_top">5dp</dimen>
+    <dimen name="plugpag_data_input_clear_button_width">24dp</dimen>
+    <dimen name="plugpag_data_input_data_margin_bottom">24dp</dimen>
+    <dimen name="plugpag_data_input_data_width">184dp</dimen>
+    <dimen name="plugpag_data_input_keyboard_padding">4dp</dimen>
+    <dimen name="plugpag_data_input_keyboard_text_size">36sp</dimen>
+    <dimen name="plugpag_data_input_line">1dp</dimen>
+    <dimen name="plugpag_data_input_margin_top">87dp</dimen>
+    <dimen name="plugpag_data_input_progressbar_height">2dp</dimen>
+    <dimen name="plugpag_data_input_progressbar_margin_top">24dp</dimen>
+    <dimen name="plugpag_data_input_textsize_title">22sp</dimen>
+    <dimen name="plugpag_data_input_title_letter_spacing">0.05</dimen>
+    <dimen name="plugpag_data_input_title_text_size">16sp</dimen>
+    <dimen name="plugpag_inner_fragment_padding_bottom">24dp</dimen>
+    <dimen name="plugpag_inner_fragment_padding_left">8dp</dimen>
+    <dimen name="plugpag_inner_fragment_padding_right">8dp</dimen>
+    <dimen name="plugpag_inner_fragment_padding_top">24dp</dimen>
+    <dimen name="plugpag_logo_margin_bottom">48dp</dimen>
+    <dimen name="plugpag_main_activity_padding">16dp</dimen>
+    <dimen name="plugpag_snackbar_font_size">14sp</dimen>
+    <dimen name="plugpag_snackbar_padding_bottom">16dp</dimen>
+    <dimen name="plugpag_snackbar_padding_top">11dp</dimen>
+    <dimen name="size_all_big">100dp</dimen>
+    <dimen name="size_all_large">32dp</dimen>
+    <dimen name="size_all_medium">8dp</dimen>
+    <dimen name="size_all_qrcode">300dp</dimen>
+    <dimen name="size_all_small">4dp</dimen>
+    <dimen name="size_all_xbig">140dp</dimen>
+    <dimen name="size_all_xlarge">40dp</dimen>
+    <dimen name="size_all_xmedium">16dp</dimen>
+    <dimen name="size_all_xsmall">2dp</dimen>
+    <dimen name="size_all_xxlarge">48dp</dimen>
+    <dimen name="size_all_xxmedium">24dp</dimen>
+    <dimen name="size_all_xxsmall">1dp</dimen>
+    <dimen name="size_all_xxxlarge">56dp</dimen>
+    <dimen name="size_all_xxxxbig">264dp</dimen>
+    <dimen name="size_all_xxxxlarge">80dp</dimen>
+    <dimen name="snackbar_margin_bottom">24dp</dimen>
+    <dimen name="textsize_all_h0">12sp</dimen>
+    <dimen name="textsize_all_h1">14sp</dimen>
+    <dimen name="textsize_all_h2">16sp</dimen>
+    <dimen name="textsize_all_h3">18sp</dimen>
+    <dimen name="textsize_all_h4">20sp</dimen>
+    <dimen name="textsize_all_h5">22sp</dimen>
+    <dimen name="textsize_all_h6">24sp</dimen>
+    <dimen name="textsize_all_h7">26sp</dimen>
+    <dimen name="textsize_all_h8">28sp</dimen>
+    <dimen name="textsize_all_h9">32sp</dimen>
+    <integer name="shortAnimTime">240</integer>
+    <string name="all_area_code_brazil">+55</string>
+    <string name="all_cancel">Cancelar</string>
+    <string name="all_client_receipt">Via do Cliente</string>
+    <string name="all_ddd">DDD</string>
+    <string name="all_new_send_client_receipt">Enviar via do cliente</string>
+    <string name="all_print">Imprimir</string>
+    <string name="all_qrcode_title">Escaneie o código abaixo\npara efetuar o pagamento</string>
+    <string name="all_send_sms">Enviar SMS</string>
+    <string name="app_name">PlugPag</string>
+    <string name="plugpag_authentication_button_hide_password">Ocultar</string>
+    <string name="plugpag_authentication_button_login">ENTRAR</string>
+    <string name="plugpag_authentication_button_show_password">Mostrar</string>
+    <string name="plugpag_authentication_error_email_format">Oops! E-mail inválido!</string>
+    <string name="plugpag_authentication_error_invalid_email_or_password">Oops! E-mail ou senha inválidos</string>
+    <string name="plugpag_authentication_error_missing_email">Oops! E-mail não foi preenchido</string>
+    <string name="plugpag_authentication_error_missing_password">Oops! Senha não foi preenchida</string>
+    <string name="plugpag_authentication_hint_email">E-mail</string>
+    <string name="plugpag_authentication_hint_password">Senha</string>
+    <string name="plugpag_authentication_snackbar_error_no_network">Verifique sua conexão com a internet e tente novamente.</string>
+    <string name="plugpag_authentication_snackbar_error_title">Ooops!</string>
+    <string name="plugpag_authentication_text_forgot_password">Esqueceu a senha?</string>
+    <string name="plugpag_data_input_button_next">CONTINUAR</string>
+    <string name="plugpag_data_input_print_customer_receipt">Imprimir via do cliente</string>
+    <string name="plugpag_data_input_title_cvv">Digite o código de segurança (CVV)</string>
+    <string name="plugpag_data_input_title_first_6_digits">Digite os 6 primeiros dígitos do cartão</string>
+    <string name="plugpag_data_input_title_last_4_digits">Digite os 4 últimos dígitos do cartão</string>
+    <string name="plugpag_data_input_title_menu">Selecione:</string>
+    <string name="void_qrcode_title">Escaneie o código abaixo\npara efetuar o estorno</string>
+    <style name="PlugPagActivity">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <style name="PlugPagAuthenticationForgotPasswordText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/plugpag_auth_forgot_password_text_size</item>
+        <item name="android:paddingBottom">@dimen/plugpag_auth_forgot_password_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/plugpag_auth_forgot_password_padding_top</item>
+        <item name="android:textColor">@color/plugpag_forgot_password</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="PlugPagAuthenticationFragment" parent="PlugPagFragmentFragmentContainer">
+    </style>
+    <style name="PlugPagAuthenticationTextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/plugpag_auth_edittext_text_size</item>
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="PlugPagAuthenticationTextInputEditText.Email">
+        <item name="android:password">false</item>
+        <item name="android:inputType">textEmailAddress|textNoSuggestions</item>
+    </style>
+    <style name="PlugPagAuthenticationTextInputEditText.Password">
+        <item name="android:password">true</item>
+        <item name="android:inputType">textPassword|textNoSuggestions</item>
+    </style>
+    <style name="PlugPagAuthenticationTextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">@dimen/plugpag_auth_textinputlayout_max_height</item>
+        <item name="android:layout_marginBottom">@dimen/plugpag_auth_textinputlayout_margin_bottom</item>
+        <item name="android:layout_marginTop">@dimen/plugpag_auth_textinputlayout_margin_top</item>
+    </style>
+    <style name="PlugPagAuthenticationTextInputLayoutError">
+        <item name="android:textSize">@dimen/plugpag_auth_error_text_size</item>
+        <item name="android:textColor">@color/plugpag_error</item>
+        <item name="android:paddingLeft">@dimen/plugpag_auth_edittext_padding_left</item>
+        <item name="android:paddingRight">@dimen/plugpag_auth_edittext_padding_right</item>
+    </style>
+    <style name="PlugPagAuthenticationTextInputLayoutHintError">
+        <item name="android:textColor">@color/plugpag_error</item>
+    </style>
+    <style name="PlugPagAuthenticationTextInputLayoutHintNormal">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="PlugPagAuthenticationTogglePasswordButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/plugpag_auth_button_toggle_password_font_size</item>
+        <item name="android:textColor">@color/plugpag_toggle_password</item>
+        <item name="android:background">@null</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">@dimen/plugpag_auth_button_toggle_password_margin_right</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginTop">@dimen/plugpag_auth_button_toggle_password_margin_top</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="PlugPagButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/plugpag_button_text_size</item>
+        <item name="android:paddingBottom">@dimen/plugpag_button_padding_bottom</item>
+        <item name="android:paddingLeft">@dimen/plugpag_button_padding_left</item>
+        <item name="android:paddingRight">@dimen/plugpag_button_padding_right</item>
+        <item name="android:paddingTop">@dimen/plugpag_button_padding_top</item>
+        <item name="android:layout_marginBottom">@dimen/plugpag_button_margin_bottom</item>
+        <item name="android:layout_marginTop">@dimen/plugpag_button_margin_top</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/plugpag_button_text</item>
+        <item name="android:backgroundTint" ns1:targetApi="lollipop">@color/plugpag_button</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="PlugPagButton.KeyboardKey" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">@dimen/plugpag_data_input_keyboard_padding</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingExtra">-4sp</item>
+        <item name="android:textColor">@color/plugpag_data_input_title</item>
+        <item name="android:textSize">@dimen/plugpag_data_input_keyboard_text_size</item>
+    </style>
+    <style name="PlugPagButtonShape">
+        <item name="android:textSize">@dimen/plugpag_auth_edittext_text_size</item>
+        <item name="android:padding">@dimen/plugpag_snackbar_padding_top</item>
+        <item name="android:background">@drawable/all_receipt_button_shapeselector</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="PlugPagButtonShapeAlter">
+        <item name="android:textSize">@dimen/plugpag_auth_edittext_text_size</item>
+        <item name="android:padding">@dimen/plugpag_snackbar_padding_top</item>
+        <item name="android:background">@drawable/all_receipt_button_shapeselector_alter</item>
+        <item name="android:textColor">@color/plugpag_colorPrimary</item>
+    </style>
+    <style name="PlugPagDataInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/plugpag_button_text_size</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:backgroundTint" ns1:targetApi="lollipop">@drawable/bt_enabled_selector</item>
+        <item name="android:textColor">@drawable/bt_text_enabled_selector</item>
+    </style>
+    <style name="PlugPagDataInputData">
+        <item name="android:layout_width">@dimen/plugpag_data_input_data_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:password">true</item>
+        <item name="android:layout_marginBottom">@dimen/plugpag_data_input_data_margin_bottom</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="PlugPagDataInputFragment" parent="PlugPagFragmentFragmentContainer">
+        <item name="android:background">@color/plugpag_translucent_fragment_background</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:layout_marginTop">@dimen/plugpag_data_input_margin_top</item>
+    </style>
+    <style name="PlugPagDataInputProgressBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/plugpag_data_input_progressbar_height</item>
+        <item name="android:indeterminate">false</item>
+        <item name="android:layout_marginTop">@dimen/plugpag_data_input_progressbar_margin_top</item>
+        <item name="android:progressDrawable">@android:style/Widget.ProgressBar.Horizontal</item>
+    </style>
+    <style name="PlugPagDataInputTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/plugpag_data_input_title_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:color">@color/plugpag_data_input_title</item>
+        <item name="android:letterSpacing" ns1:targetApi="lollipop">@dimen/plugpag_data_input_title_letter_spacing</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_marginBottom">@dimen/plugpag_data_input_data_margin_bottom</item>
+    </style>
+    <style name="PlugPagFragmentFragmentContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@color/plugpag_translucent_fragment_background</item>
+        <item name="android:paddingLeft">@dimen/plugpag_inner_fragment_padding_left</item>
+        <item name="android:paddingRight">@dimen/plugpag_inner_fragment_padding_right</item>
+        <item name="android:paddingTop">@dimen/plugpag_inner_fragment_padding_top</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="PlugPagKeyboardRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+    <style name="PlugPagKeyboardWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PlugPagPagClearButton">
+        <item name="android:layout_width">@dimen/plugpag_data_input_clear_button_width</item>
+        <item name="android:layout_height">@dimen/plugpag_data_input_clear_button_height</item>
+        <item name="android:background">@drawable/bt_clear_button</item>
+        <item name="android:layout_marginTop">@dimen/plugpag_data_input_clear_button_margin_top</item>
+    </style>
+    <style name="PlugPagPagSeguroLogo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/plugpag_logo_margin_bottom</item>
+        <item name="android:src">@drawable/logo_pagseguro</item>
+    </style>
+    <style name="PlugPagSnackbar">
+        <item name="android:background">@color/plugpag_error</item>
+        <item name="android:paddingBottom">@dimen/plugpag_snackbar_padding_bottom</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">@dimen/plugpag_snackbar_padding_top</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="PlugPagSnackbarText">
+        <item name="android:textColor">@color/plugpag_snackbar_text</item>
+        <item name="android:textSize">@dimen/plugpag_snackbar_font_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="PlugPagSnackbarText.Title">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="PlugPagText">
+        <item name="android:textSize">@dimen/plugpag_data_input_title_text_size</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="PlugPagTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/plugpag_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/plugpag_colorPrimaryDark</item>
+        <item name="colorAccent">@color/plugpag_colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.AppCompat.Light.NoActionBar.Fullscreen.Translucent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/plugpag_translucent_activity_color</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="TransparentActivity" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="bigBlackTitle">
+        <item name="android:textSize">@dimen/textsize_all_h4</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="borderEditText">
+        <item name="android:padding">@dimen/plugpag_inner_fragment_padding_right</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:background">@drawable/all_edittext_border</item>
+        <item name="android:textSize">@dimen/plugpag_data_input_textsize_title</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+    <style name="editTextLine">
+        <item name="android:padding">@dimen/size_all_medium</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/textsize_all_h5</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+    <style name="titleBlack">
+        <item name="android:textSize">@dimen/textsize_all_h6</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/plugpag_auth_textinputlayout_margin_bottom"
+              android:layout_marginRight="@dimen/plugpag_auth_textinputlayout_margin_bottom"
+              android:background="@android:color/white"
+              android:gravity="center_vertical"
+              android:orientation="vertical"
+              android:padding="@dimen/plugpag_auth_forgot_password_padding_bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/plugpag_inner_fragment_padding_right"
+        android:layout_marginTop="@dimen/plugpag_inner_fragment_padding_right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textview_plugpag_sms_cod"
+            style="@style/PlugPagText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/all_area_code_brazil"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/edittext_plugpag_sms_ddd"
+            style="@style/borderEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/plugpag_inner_fragment_padding_right"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:textColorHint="@color/gray"
+            android:focusableInTouchMode="true"
+            android:hint="@string/all_ddd"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="2"/>
+
+        <EditText
+            android:id="@+id/edittext_plugpag_sms_number"
+            style="@style/borderEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/plugpag_inner_fragment_padding_right"
+            android:layout_weight="5"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="10"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_plugpag_sms_send_receipt"
+        style="@style/PlugPagButtonShape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/plugpag_snackbar_padding_top"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/all_new_send_client_receipt"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>

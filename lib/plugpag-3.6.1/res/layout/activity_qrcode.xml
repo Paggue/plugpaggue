@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/cl_qrcode_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@android:color/transparent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/frame_qrcode_layout"
+        android:animateLayoutChanges="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/size_all_xmedium"
+        android:paddingBottom="@dimen/size_all_xmedium"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/textview_info"
+            style="@style/bigBlackTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/all_qrcode_title"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <br.com.uol.pagseguro.plugpag.qrcodeelo.utils.QRCodeView
+            android:id="@+id/qrCodeView"
+            android:layout_width="@dimen/size_all_qrcode"
+            android:layout_height="@dimen/size_all_qrcode"
+            app:layout_constraintTop_toBottomOf="@+id/textview_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_value"
+            style="@style/titleBlack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/qrCodeView" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            style="@style/PlugPagButtonShapeAlter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_all_xxmedium"
+            android:layout_marginLeft="@dimen/size_all_xmedium"
+            android:layout_marginRight="@dimen/size_all_xmedium"
+            android:text="@string/all_cancel"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_value" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>

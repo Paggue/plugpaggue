@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/PlugPagSnackbar">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/plugpag_snackbar_title"
+        style="@style/PlugPagSnackbarText.Title"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/plugpag_snackbar_message"
+        style="@style/PlugPagSnackbarText"/>
+
+</LinearLayout>

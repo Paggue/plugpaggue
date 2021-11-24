@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/wildSand"/>
+            <stroke android:width="@dimen/plugpag_data_input_line" android:color="@color/alto"/>
+        </shape>
+    </item>
+</selector>
