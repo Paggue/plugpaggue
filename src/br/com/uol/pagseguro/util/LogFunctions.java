@@ -9,9 +9,3 @@ public class LogFunctions {
   
   public static void logError(String message, Exception e) {}
 }
-
-
-/* Location:              /home/paggue/Downloads/classes.jar!/br/com/uol/pagseguro/util/LogFunctions.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

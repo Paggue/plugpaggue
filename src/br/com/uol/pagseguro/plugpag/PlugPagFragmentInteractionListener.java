@@ -12,9 +12,3 @@ public interface PlugPagFragmentInteractionListener {
   
   void interact(@NonNull Intent paramIntent);
 }
-
-
-/* Location:              /home/paggue/Downloads/classes.jar!/br/com/uol/pagseguro/plugpag/PlugPagFragmentInteractionListener.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

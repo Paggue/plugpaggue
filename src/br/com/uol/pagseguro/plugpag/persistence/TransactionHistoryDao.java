@@ -16,9 +16,3 @@ public abstract class TransactionHistoryDao {
   @Query("DELETE FROM transaction_history WHERE date_transaction NOT IN (SELECT DISTINCT date_transaction FROM transaction_history ORDER BY date_transaction DESC LIMIT :days)")
   abstract int deleteTransactions(int paramInt);
 }
-
-
-/* Location:              /home/paggue/Downloads/classes.jar!/br/com/uol/pagseguro/plugpag/persistence/TransactionHistoryDao.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

@@ -22,9 +22,3 @@ public final class BuildConfig {
   
   public static final boolean SMARTPOS = false;
 }
-
-
-/* Location:              /home/paggue/Downloads/classes.jar!/br/com/uol/pagseguro/plugpag/BuildConfig.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */

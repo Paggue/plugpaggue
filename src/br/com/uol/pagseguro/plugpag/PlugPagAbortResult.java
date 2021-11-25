@@ -1,50 +1,17 @@
-/*    */ package br.com.uol.pagseguro.plugpag;
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ public class PlugPagAbortResult
-/*    */ {
-/*    */   static {
-/* 10 */     PlugPagLibraryLoader.loadNativeLibraries();
-/*    */   }
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */   
-/* 17 */   private int mResult = -1;
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */   
-/*    */   public PlugPagAbortResult(int result) {
-/* 29 */     this.mResult = result;
-/*    */   }
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */   
-/*    */   public int getResult() {
-/* 42 */     return this.mResult;
-/*    */   }
-/*    */ }
+package br.com.uol.pagseguro.plugpag;
 
-
-/* Location:              /home/paggue/Downloads/classes.jar!/br/com/uol/pagseguro/plugpag/PlugPagAbortResult.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
+public class PlugPagAbortResult {
+  static {
+    PlugPagLibraryLoader.loadNativeLibraries();
+  }
+  
+  private int mResult = -1;
+  
+  public PlugPagAbortResult(int result) {
+    this.mResult = result;
+  }
+  
+  public int getResult() {
+    return this.mResult;
+  }
+}

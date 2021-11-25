@@ -1,25 +1,17 @@
-/*    */ package br.com.uol.pagseguro.plugpag.exception;
-/*    */ 
-/*    */ public class PlugPagDeviceInfoException
-/*    */   extends RuntimeException
-/*    */ {
-/*    */   public PlugPagDeviceInfoException() {}
-/*    */   
-/*    */   public PlugPagDeviceInfoException(String message) {
-/*  9 */     super(message);
-/*    */   }
-/*    */   
-/*    */   public PlugPagDeviceInfoException(String message, Throwable cause) {
-/* 13 */     super(message, cause);
-/*    */   }
-/*    */   
-/*    */   public PlugPagDeviceInfoException(Throwable cause) {
-/* 17 */     super(cause);
-/*    */   }
-/*    */ }
+package br.com.uol.pagseguro.plugpag.exception;
 
-
-/* Location:              /home/paggue/Downloads/classes.jar!/br/com/uol/pagseguro/plugpag/exception/PlugPagDeviceInfoException.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       1.1.3
- */
+public class PlugPagDeviceInfoException extends RuntimeException {
+  public PlugPagDeviceInfoException() {}
+  
+  public PlugPagDeviceInfoException(String message) {
+    super(message);
+  }
+  
+  public PlugPagDeviceInfoException(String message, Throwable cause) {
+    super(message, cause);
+  }
+  
+  public PlugPagDeviceInfoException(Throwable cause) {
+    super(cause);
+  }
+}
