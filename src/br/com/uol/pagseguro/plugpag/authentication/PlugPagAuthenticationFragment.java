@@ -389,9 +389,9 @@
 /*     */
 /* 390 */     authenticationRequest = new PlugPagAuthenticationRequest(user, password, deviceInfo.getDeviceId(), deviceInfo.getDeviceModel(), PlugPag.getApplicationCode(), PlugPag.getLibVersion(), deviceInfo.getOs(), deviceInfo.getOsVersion(), deviceInfo.getImei());
 /*     */
-/* 392 */     if (getActivity() instanceof br.com.uol.pagseguro.plugpag.PlugPagActivity) {
+/* 392 */     //if (getActivity() instanceof br.com.uol.pagseguro.plugpag.PlugPagActivity) {
 /* 393 */       (new AuthenticationTask(this)).execute((Object[])new PlugPagAuthenticationRequest[] { authenticationRequest });
-/*     */     }
+/*     */     //}
 /*     */   }
 /*     */
 /*     */
