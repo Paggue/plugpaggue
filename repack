@@ -4,7 +4,7 @@
 mkdir -p ./releases/3.x/android/br/com/uol/pagseguro/plugpag/3.6.1
 
 # Add gradle package info to release folder
-cp ./src/plugpag-3.6.1.pom ./releases/3.x/android/br/com/uol/pagseguro/plugpag/3.6.1
+cp ./lib/plugpag-3.6.1/plugpag-3.6.1.pom ./releases/3.x/android/br/com/uol/pagseguro/plugpag/3.6.1
 
 # Rebuild aar files from modified sources
 zip -r -u -v ./releases/3.x/android/br/com/uol/pagseguro/plugpag/3.6.1/plugpag-3.6.1.aar ./lib/plugpag-3.6.1/*
