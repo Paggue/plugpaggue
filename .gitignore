@@ -1,24 +1,15 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/java
-# Edit at https://www.toptal.com/developers/gitignore?templates=java
-
-./out/*
-!./out/.gitkeep
-
-### Java ###
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-# End of https://www.toptal.com/developers/gitignore/api/java
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/app/out
+/captures
+.externalNativeBuild
+.cxx
+local.properties

@@ -4,10 +4,10 @@
 mkdir -p ./releases/3.x/android/br/com/uol/pagseguro/plugpag/3.6.1
 
 # Copy java compiler output files to classes.jar
-jar ufv ./lib/plugpag-3.6.1/classes.jar -C ./out/production/plugpaggue .
+jar ufv ./app/lib/plugpag-3.6.1/classes.jar -C ./app/out/production/plugpaggue .
 
 # Add gradle package info to release folder
-cp ./src/plugpag-3.6.1.pom ./releases/3.x/android/br/com/uol/pagseguro/plugpag/3.6.1
+cp ./app/src/plugpag-3.6.1.pom ./releases/3.x/android/br/com/uol/pagseguro/plugpag/3.6.1
 
 # Rebuild aar files from modified sources
-zip -r -u -v ./releases/3.x/android/br/com/uol/pagseguro/plugpag/3.6.1/plugpag-3.6.1.aar ./lib/plugpag-3.6.1/*
+zip -r -u -v ./releases/3.x/android/br/com/uol/pagseguro/plugpag/3.6.1/plugpag-3.6.1.aar ./app/lib/plugpag-3.6.1/*

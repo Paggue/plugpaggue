@@ -20,11 +20,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
 import br.com.uol.pagseguro.plugpag.DeviceInfo;
 import br.com.uol.pagseguro.plugpag.PlugPag;
 import br.com.uol.pagseguro.plugpag.PlugPagFragment;
 import br.com.uol.pagseguro.plugpag.PlugPagFragmentInteractionListener;
 import br.com.uol.pagseguro.plugpag.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
