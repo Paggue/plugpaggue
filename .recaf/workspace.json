@@ -6,19 +6,19 @@
   "libraries": [
     {
       "kind": "jar",
-      "source": "./lib/recaf-2.21.5/imports/android-sdk-28.jar"
+      "source": "./lib/android-sdk-28.jar"
     },
     {
       "kind": "jar",
-      "source": "./lib/recaf-2.21.5/imports/appcompat-1.2.0.jar"
+      "source": "./lib/appcompat-1.2.0.jar"
     },
     {
       "kind": "jar",
-      "source": "./lib/recaf-2.21.5/imports/core-1.2.0.jar"
+      "source": "./lib/corecompat-1.2.0.jar"
     },
     {
       "kind": "jar",
-      "source": "./lib/recaf-2.21.5/imports/design-28.0.0.jar"
+      "source": "./lib/design-28.0.0.jar"
     }
   ]
 }
