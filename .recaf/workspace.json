@@ -8,17 +8,21 @@
       "kind": "jar",
       "source": "./lib/android-sdk-28.jar"
     },
-    {
-      "kind": "jar",
-      "source": "./lib/appcompat-1.2.0.jar"
-    },
-    {
-      "kind": "jar",
-      "source": "./lib/corecompat-1.2.0.jar"
-    },
-    {
-      "kind": "jar",
-      "source": "./lib/design-28.0.0.jar"
-    }
-  ]
+  //   {
+  //     "kind": "jar",
+  //     "source": "./lib/drawerlayout-1.0.0.jar"
+  //   },
+  //   {
+  //     "kind": "jar",
+  //     "source": "./lib/appcompat-1.2.0.jar"
+  //   },
+  //   {
+  //     "kind": "jar",
+  //     "source": "./lib/corecompat-1.2.0.jar"
+  //   },
+  //   {
+  //     "kind": "jar",
+  //     "source": "./lib/design-28.0.0.jar"
+  //   }
+  // ]
 }
