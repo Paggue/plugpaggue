@@ -1,7 +1,6 @@
 # Plugpaggue
 This project rebuild Paggseguro/PlugPag with modified files to simplify Minizinha NFC Android integration.
 
-
 # Setup
 
 ```
@@ -39,8 +38,6 @@ public class PlugPaggueAuthenticationService {
 }
 ```
 
-
-
 # Development
 
 1. To keep a git track of your changes, copy the pached files to src/modified and comit then before make any change in recaf.
@@ -52,7 +49,6 @@ Run the comand below to start editing:
 ```bash
 sh dev
 ```
-
 
 # Recompile
 
