@@ -15,7 +15,6 @@
             android:visibility="invisible"
             android:layout_centerHorizontal="true"
             android:indeterminate="true"
-            android:layout_centerHorizontal="true"
         />
 
         <!-- E-mail -->
