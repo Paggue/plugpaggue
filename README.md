@@ -1,5 +1,4 @@
 # Plugpaggue
-
 This project rebuild Paggseguro/PlugPag with modified files to simplify Minizinha NFC Android integration.
 
 
@@ -19,6 +18,28 @@ dependencies {
     implementation 'br.com.uol.pagseguro:plugpag:3.6.1@aar'
 }
 ```
+
+# Authenticate
+
+```java
+public class PlugPaggueAuthenticationService {
+
+  private PlugPag plugPag;
+  private PlugPagAuthenticationListener plugPagAuthListener;
+
+  public PlugPaggueAuthenticationService(PlugPag plugPag) {
+    this.plugPag = plugPag;
+    this.plugPagAuthListener = new PlugPagAuthenticationListener();
+  }
+
+  public void execute(String email, String password) {
+    PlugPagAuthenticationFragment.setCredentials(email, password);
+    this.plugPag.requestAuthentication(this.plugPagAuthListener);
+  }
+}
+```
+
+
 
 # Development
 
