@@ -1,3 +1,5 @@
+// Decompiled with: CFR 0.151
+// Class Version: 8
 package br.com.uol.pagseguro.plugpag.authentication;
 
 import android.content.Context;
@@ -8,7 +10,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TextInputLayout;
-import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -20,9 +21,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import androidx.appcompat.widget.AppCompatEditText;
 import br.com.uol.pagseguro.plugpag.DeviceInfo;
 import br.com.uol.pagseguro.plugpag.PlugPag;
-import br.com.uol.pagseguro.plugpag.PlugPagActivity;
 import br.com.uol.pagseguro.plugpag.PlugPagFragment;
 import br.com.uol.pagseguro.plugpag.PlugPagFragmentInteractionListener;
 import br.com.uol.pagseguro.plugpag.R;
@@ -53,6 +54,14 @@ public class PlugPagAuthenticationFragment
   private Button mBtnAuthenticate = null;
   private TextView mTxtForgotPassword = null;
   private PlugPagFragmentInteractionListener mInteractionListener = null;
+  public static PlugPagAuthenticationFragment instance = null;
+  private static String email = null;
+  private static String password = null;
+
+  public static void setCredentials(String email, String password) {
+    PlugPagAuthenticationFragment.email = email;
+    PlugPagAuthenticationFragment.password = password;
+  }
 
   @Override
   @Nullable
@@ -76,6 +85,7 @@ public class PlugPagAuthenticationFragment
   public void onResume() {
     super.onResume();
     this.updatePasswordPadding();
+    this.startAuthenticationTask(email, password);
   }
 
   @Override
@@ -84,12 +94,14 @@ public class PlugPagAuthenticationFragment
     if (context instanceof PlugPagFragmentInteractionListener) {
       this.mInteractionListener = (PlugPagFragmentInteractionListener) ((Object) context);
     }
+    instance = this;
   }
 
   @Override
   public void onDetach() {
     super.onDetach();
     this.mInteractionListener = null;
+    instance = null;
   }
 
   private void setupViewReferences() {
@@ -114,23 +126,6 @@ public class PlugPagAuthenticationFragment
   }
 
   public void onClick(View view) {
-    int id2 = -1;
-    int validationResult = 0;
-    if (view != null) {
-      id2 = view.getId();
-      if (id2 == R.id.plugpag_authentication_toggle_password) {
-        this.togglePasswordVisibility();
-      } else if (id2 == R.id.plugpag_authentication_forgot_password) {
-        this.showForgotPasswordPage();
-      } else if (id2 == R.id.plugpag_authentication_authenticate) {
-        validationResult = this.validateAuthenticationData();
-        if (validationResult == 0) {
-          this.startAuthenticationTask(this.mEdtEmail.getText().toString(), this.mEdtPassword.getText().toString());
-        } else {
-          this.handleValidationResult(validationResult);
-        }
-      }
-    }
   }
 
   public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -227,16 +222,14 @@ public class PlugPagAuthenticationFragment
 
   private native PlugPagAuthenticationResult authenticate(PlugPagAuthenticationRequest var1);
 
-  private void startAuthenticationTask(@NonNull String user, @NonNull String password) {
+  public void startAuthenticationTask(@NonNull String user, @NonNull String password) {
     PlugPagAuthenticationRequest authenticationRequest = null;
     DeviceInfo deviceInfo = null;
     deviceInfo = new DeviceInfo(this.getContext());
     authenticationRequest = new PlugPagAuthenticationRequest(user, password, deviceInfo.getDeviceId(),
         deviceInfo.getDeviceModel(), PlugPag.getApplicationCode(), PlugPag.getLibVersion(), deviceInfo.getOs(),
         deviceInfo.getOsVersion(), deviceInfo.getImei());
-    if (this.getActivity() instanceof PlugPagActivity) {
-      new AuthenticationTask(this).execute(new PlugPagAuthenticationRequest[] { authenticationRequest });
-    }
+    new AuthenticationTask(this).execute(new PlugPagAuthenticationRequest[] { authenticationRequest });
   }
 
   @Override
