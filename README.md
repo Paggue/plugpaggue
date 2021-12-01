@@ -9,7 +9,6 @@ repositories {
     url 'https://github.com/paggue/plugpaggue/raw/main/releases/3.x/android'
   }
 }
-
 ```
 
 ```
@@ -21,20 +20,13 @@ dependencies {
 # Authenticate
 
 ```java
-public class PlugPaggueAuthenticationService {
+public void authenticate(String email, String password) {
+    boolean authenticated = this.plugPag.isAuthenticated();
 
-  private PlugPag plugPag;
-  private PlugPagAuthenticationListener plugPagAuthListener;
-
-  public PlugPaggueAuthenticationService(PlugPag plugPag) {
-    this.plugPag = plugPag;
-    this.plugPagAuthListener = new PlugPagAuthenticationListener();
-  }
-
-  public void execute(String email, String password) {
-    PlugPagAuthenticationFragment.setCredentials(email, password);
-    this.plugPag.requestAuthentication(this.plugPagAuthListener);
-  }
+    if (!authenticated) {
+        PlugPagAuthenticationFragment.setCredentials(email, password);
+        this.plugPag.requestAuthentication(this.plugPagAuthListener);
+    }
 }
 ```
 
