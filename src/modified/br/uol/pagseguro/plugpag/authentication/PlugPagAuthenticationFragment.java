@@ -28,7 +28,8 @@ import br.com.uol.pagseguro.plugpag.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlugPagAuthenticationFragment extends PlugPagFragment implements View.OnClickListener, PlugPagAuthenticationCallback, TextView.OnEditorActionListener, TextWatcher {
+public class PlugPagAuthenticationFragment extends PlugPagFragment
+    implements View.OnClickListener, PlugPagAuthenticationCallback, TextView.OnEditorActionListener, TextWatcher {
   private static final int OK = 0;
 
   private static final int ERROR_NOT_AUTHENTICATED = 1;
@@ -43,7 +44,7 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
 
   private static final String REGEX_EMAIL_FORMAT = "^([a-zA-Z_]+)(\\.?[a-zA-Z0-9_]+)*@[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+)+$";
 
-  private static final TransformationMethod PASSWORD_TRANSFORMATION_METHOD = (TransformationMethod)new PasswordTransformationMethod();
+  private static final TransformationMethod PASSWORD_TRANSFORMATION_METHOD = (TransformationMethod) new PasswordTransformationMethod();
 
   private TextInputLayout mWrapperEmail = null;
 
@@ -62,7 +63,8 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
   private PlugPagFragmentInteractionListener mInteractionListener = null;
 
   @Nullable
-  public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+  public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+      @Nullable Bundle savedInstanceState) {
     View view = null;
     super.onCreateView(inflater, container, savedInstanceState);
     view = inflater.inflate(R.layout.fragment_plugpag_authentication, container, false);
@@ -84,7 +86,7 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
   public void onAttach(Context context) {
     super.onAttach(context);
     if (context instanceof PlugPagFragmentInteractionListener)
-      this.mInteractionListener = (PlugPagFragmentInteractionListener)context;
+      this.mInteractionListener = (PlugPagFragmentInteractionListener) context;
   }
 
   public void onDetach() {
@@ -95,13 +97,13 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
   private void setupViewReferences() {
     View root = null;
     root = getView();
-    this.mWrapperEmail = (TextInputLayout)root.findViewById(R.id.plugpag_authentication_wrapper_email);
-    this.mEdtEmail = (AppCompatEditText)root.findViewById(R.id.plugpag_authentication_email);
-    this.mWrapperPassword = (TextInputLayout)root.findViewById(R.id.plugpag_authentication_wrapper_password);
-    this.mEdtPassword = (AppCompatEditText)root.findViewById(R.id.plugpag_authentication_password);
-    this.mBtnTogglePassword = (Button)root.findViewById(R.id.plugpag_authentication_toggle_password);
-    this.mBtnAuthenticate = (Button)root.findViewById(R.id.plugpag_authentication_authenticate);
-    this.mTxtForgotPassword = (TextView)root.findViewById(R.id.plugpag_authentication_forgot_password);
+    this.mWrapperEmail = (TextInputLayout) root.findViewById(R.id.plugpag_authentication_wrapper_email);
+    this.mEdtEmail = (AppCompatEditText) root.findViewById(R.id.plugpag_authentication_email);
+    this.mWrapperPassword = (TextInputLayout) root.findViewById(R.id.plugpag_authentication_wrapper_password);
+    this.mEdtPassword = (AppCompatEditText) root.findViewById(R.id.plugpag_authentication_password);
+    this.mBtnTogglePassword = (Button) root.findViewById(R.id.plugpag_authentication_toggle_password);
+    this.mBtnAuthenticate = (Button) root.findViewById(R.id.plugpag_authentication_authenticate);
+    this.mTxtForgotPassword = (TextView) root.findViewById(R.id.plugpag_authentication_forgot_password);
   }
 
   private void setupEventListeners() {
@@ -125,8 +127,9 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
         validationResult = validateAuthenticationData();
         if (validationResult == 0) {
           startAuthenticationTask(this.mEdtEmail
-              .getText().toString(), this.mEdtPassword
-              .getText().toString());
+              .getText().toString(),
+              this.mEdtPassword
+                  .getText().toString());
         } else {
           handleValidationResult(validationResult);
         }
@@ -153,7 +156,8 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
   }
 
   private boolean validateEmailFormat(@NonNull String email) {
-    return (!TextUtils.isEmpty(email) && email.matches("^([a-zA-Z_]+)(\\.?[a-zA-Z0-9_]+)*@[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+)+$"));
+    return (!TextUtils.isEmpty(email)
+        && email.matches("^([a-zA-Z_]+)(\\.?[a-zA-Z0-9_]+)*@[a-zA-Z0-9]+(\\.[a-zA-Z0-9]+)+$"));
   }
 
   private void handleValidationResult(int validationResult) {
@@ -184,9 +188,10 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
         viewToFocus = this.mEdtPassword;
       }
       for (int i = 0; i < wrappersWithError.size(); i++) {
-        ((TextInputLayout)wrappersWithError.get(i)).setHintTextAppearance(R.style.PlugPagAuthenticationTextInputLayoutHintError);
+        ((TextInputLayout) wrappersWithError.get(i))
+            .setHintTextAppearance(R.style.PlugPagAuthenticationTextInputLayoutHintError);
         if (errorMessages.size() > i && errorMessages.get(i) != null)
-          ((TextInputLayout)wrappersWithError.get(i)).setError(errorMessages.get(i));
+          ((TextInputLayout) wrappersWithError.get(i)).setError(errorMessages.get(i));
       }
       if (viewToFocus != null)
         viewToFocus.requestFocus();
@@ -227,9 +232,11 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
     PlugPagAuthenticationRequest authenticationRequest = null;
     DeviceInfo deviceInfo = null;
     deviceInfo = new DeviceInfo(getContext());
-    authenticationRequest = new PlugPagAuthenticationRequest(user, password, deviceInfo.getDeviceId(), deviceInfo.getDeviceModel(), PlugPag.getApplicationCode(), PlugPag.getLibVersion(), deviceInfo.getOs(), deviceInfo.getOsVersion(), deviceInfo.getImei());
+    authenticationRequest = new PlugPagAuthenticationRequest(user, password, deviceInfo.getDeviceId(),
+        deviceInfo.getDeviceModel(), PlugPag.getApplicationCode(), PlugPag.getLibVersion(), deviceInfo.getOs(),
+        deviceInfo.getOsVersion(), deviceInfo.getImei());
     if (getActivity() instanceof br.com.uol.pagseguro.plugpag.PlugPagActivity)
-      (new AuthenticationTask(this)).execute((Object[])new PlugPagAuthenticationRequest[] { authenticationRequest });
+      (new AuthenticationTask(this)).execute((Object[]) new PlugPagAuthenticationRequest[] { authenticationRequest });
   }
 
   public void onPreAuthenticate() {
@@ -279,9 +286,11 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
     return (context.getPackageManager().queryIntentActivities(intent, 0).size() > 0);
   }
 
-  public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+  public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+  }
 
-  public void onTextChanged(CharSequence s, int start, int before, int count) {}
+  public void onTextChanged(CharSequence s, int start, int before, int count) {
+  }
 
   public void afterTextChanged(Editable s) {
     if (s.length() > 0) {
@@ -297,7 +306,7 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
     startIndex = this.mEdtPassword.getSelectionStart();
     endIndex = this.mEdtPassword.getSelectionEnd();
     if (this.mBtnTogglePassword.getText()
-      .equals(getString(R.string.plugpag_authentication_button_show_password))) {
+        .equals(getString(R.string.plugpag_authentication_button_show_password))) {
       this.mBtnTogglePassword.setText(R.string.plugpag_authentication_button_hide_password);
       this.mEdtPassword.setTransformationMethod(null);
     } else {
@@ -314,12 +323,15 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
       this.mEdtPassword.measure(0, 0);
     if (this.mBtnTogglePassword.getMeasuredWidth() <= 0)
       this.mBtnTogglePassword.measure(0, 0);
-    buttonWidth = this.mBtnTogglePassword.getMeasuredWidth() + this.mBtnTogglePassword.getPaddingLeft() + this.mBtnTogglePassword.getPaddingRight();
+    buttonWidth = this.mBtnTogglePassword.getMeasuredWidth() + this.mBtnTogglePassword.getPaddingLeft()
+        + this.mBtnTogglePassword.getPaddingRight();
     this.mEdtPassword.setPadding(this.mEdtPassword
-        .getPaddingLeft(), this.mEdtPassword
-        .getPaddingTop(), buttonWidth, this.mEdtPassword
+        .getPaddingLeft(),
+        this.mEdtPassword
+            .getPaddingTop(),
+        buttonWidth, this.mEdtPassword
 
-        .getPaddingBottom());
+            .getPaddingBottom());
   }
 
   private void showSnackbar(@NonNull String title, @NonNull String message) {
@@ -332,7 +344,8 @@ public class PlugPagAuthenticationFragment extends PlugPagFragment implements Vi
     }
   }
 
-  private native PlugPagAuthenticationResult authenticate(PlugPagAuthenticationRequest paramPlugPagAuthenticationRequest);
+  private native PlugPagAuthenticationResult authenticate(
+      PlugPagAuthenticationRequest paramPlugPagAuthenticationRequest);
 
   private class AuthenticationTask extends AsyncTask<PlugPagAuthenticationRequest, Void, PlugPagAuthenticationResult> {
     private PlugPagAuthenticationCallback mCallback = null;
