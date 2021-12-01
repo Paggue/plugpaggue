@@ -32,9 +32,9 @@ public void authenticate(String email, String password) {
 
 # Development
 
-1. To keep a git track of your changes, copy the pached files to src/modified and comit then before make any change in recaf.
-2. Some dependencies must to be solved, [download](https://mvnrepository.com/) then to `lib` folder and add an entry to `.recaf/workspace.json`
-3. To modify files that uses legancy support library (`android.support.v*`), update then to `androidx.appcompat`.
+1. To keep a git track of your changes, copy the pached files to src/modified and commit then before make any change on Recaf.
+2. Some dependencies must to be solved, [download](https://mvnrepository.com/) then to `lib` folder and create a new entry in `.recaf/workspace.json`
+3. To modify files that uses legancy support library (`android.support.v*`), update then to use `androidx.appcompat`.
 
 Run the comand below to start editing:
 
