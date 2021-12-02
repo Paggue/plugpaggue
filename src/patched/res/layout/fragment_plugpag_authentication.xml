@@ -8,6 +8,7 @@
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#A002C8"
   >
     <ProgressBar
       android:id="@+id/plugpag_authentication_loading_progress"
@@ -15,6 +16,7 @@
       android:visibility="visible"
       android:layout_centerHorizontal="true"
       android:indeterminate="true"
+      android:indeterminateTint="#ffffff"
     />
     <LinearLayout
       style="@style/PlugPagAuthenticationFragment"
