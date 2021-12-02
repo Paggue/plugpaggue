@@ -13,11 +13,16 @@
       android:id="@+id/plugpag_authentication_loading_progress"
       style="?android:attr/progressBarStyle"
       android:visibility="visible"
+      android:layout_width="match_parent"
       android:layout_centerHorizontal="true"
       android:indeterminate="true"
       android:indeterminateTint="#ffffff"
     />
-    <ViewGroup android:visibility="gone">
+    <ViewGroup
+      android:visibility="gone"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    >
       <!-- E-mail -->
       <android.support.design.widget.TextInputLayout
         android:id="@+id/plugpag_authentication_wrapper_email"
