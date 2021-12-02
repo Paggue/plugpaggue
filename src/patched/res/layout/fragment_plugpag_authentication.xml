@@ -6,7 +6,6 @@
 >
   <LinearLayout
     style="@style/PlugPagAuthenticationFragment"
-    android:visibility="gone"
     android:backgroundTint="#A002C8"
     android:gravity="center"
   >
