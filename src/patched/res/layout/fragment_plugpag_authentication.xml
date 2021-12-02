@@ -3,6 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        style="@style/PlugPagAuthenticationFragment">
+
         <ProgressBar
             android:id="@+id/plugpag_authentication_loading_progress"
             style="?android:attr/progressBarStyle"
@@ -12,11 +15,6 @@
             android:layout_centerHorizontal="true"
             android:indeterminate="true"
         />
-
-    <LinearLayout
-        style="@style/PlugPagAuthenticationFragment">
-
-
 
 
         <!-- E-mail -->
