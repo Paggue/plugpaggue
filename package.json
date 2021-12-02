@@ -1,0 +1,12 @@
+{
+  "name": "plugpaggue",
+  "version": "1.0.0",
+  "repository": "git@github.com:Paggue/plugpaggue.git",
+  "author": "jimmy@paggue.io",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@prettier/plugin-xml": "^1.1.0",
+    "prettier": "^2.5.0"
+  }
+}
