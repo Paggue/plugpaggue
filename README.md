@@ -14,6 +14,7 @@ repositories {
 ```
 dependencies {
     implementation 'br.com.uol.pagseguro:plugpag:3.6.1@aar'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }
 ```
 
